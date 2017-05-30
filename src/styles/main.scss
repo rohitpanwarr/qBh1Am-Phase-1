@@ -1,0 +1,35 @@
+/*****************************************************************************************
+Name - Foundation
+Description - The base file where all our CSS gets compiled into one single file.
+Convention - Only the imports for various modules of our framework go here.
+******************************************************************************************/
+
+/* IMPORT BOOTSRAP STYLES INTO THE APPLICATION */
+@import './node_modules/bootstrap/dist/css/bootstrap';
+
+.main-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* SITE BACKGROUND STYLES */
+.site-background {
+  background-color: lightGrey;
+  height: 100%;
+}
+
+/* SITE HEADER STYLES */
+@import 'header';
+
+/* SITE CONTENT STYLES */
+@import 'home';
+@import 'aboutus';
+@import 'services';
+@import 'contactus';
+
+/* SITE FOOTER STYLES */
+@import 'footer';
+
